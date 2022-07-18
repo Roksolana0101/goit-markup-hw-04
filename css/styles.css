@@ -142,14 +142,21 @@ p {
     padding-bottom: 94px;}
 /*hero styles*/
 .hero-section {
+    background-image: linear-gradient(360deg,
+            rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                url(../images/fonimg.jpg);
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
     background-color: var(--dark-bg-cl); padding: 200px 0;
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
 
-    background-image: url(../images/fonimg.jpg);
-    background-repeat: no-repeat;
-    background-position: center ;
+ 
+    
 }
 .hero-container
 {
@@ -276,8 +283,10 @@ font-weight: 900;
     flex-wrap: wrap;
     gap: var(--main-gap);
     }
-  .team-card-item {background-color: #ffffff;
-flex-basis: calc((100% - var(--main-gap) * (var(--teams-item) - 1)) / var(--teams-item));}
+  .team-card-item {
+    background-color: #ffffff;
+    flex-basis: calc((100% - var(--main-gap) * (var(--teams-item) - 1)) / var(--teams-item));
+}
     .team-wrapper {
     border-top: none;
     padding-top: 30px;
