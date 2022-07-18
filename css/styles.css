@@ -56,6 +56,7 @@ p {
     outline: 2px solid red;
     outline-offset: -2px;
 }
+
 /* main buttn styles*/
 .button {
     background-color: transparent;
@@ -140,7 +141,16 @@ p {
     padding-top: 94px;
     padding-bottom: 94px;}
 /*hero styles*/
-.hero-section {background-color: var(--dark-bg-cl); padding: 200px 0;}
+.hero-section {
+    background-color: var(--dark-bg-cl); padding: 200px 0;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-image: url(../images/fonimg.jpg);
+    background-repeat: no-repeat;
+    background-position: center ;
+}
 .hero-container
 {
     display: flex;
@@ -254,6 +264,10 @@ font-weight: 900;
   }
   img {display: block;}
   .team-card {
+    max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+
     background-color: #F5F4FA;
     flex-basis: calc((100% - var(--main-gap) * (var(--work-cards) - 1)) / var(--work-cards));
   }
@@ -330,8 +344,13 @@ text-align: center;}
         letter-spacing: 0.03em;
 }
 /* footer styles*/
-.footer {background-color: var(--dark-bg-cl) ;
-padding: 60px 0;}
+.footer {
+    background-color: var(--dark-bg-cl) ;
+padding: 60px 0;
+
+    max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;}
 .logo-footer {
     display: block;
     margin-bottom: 20px;
