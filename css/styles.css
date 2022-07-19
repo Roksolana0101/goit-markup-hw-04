@@ -86,6 +86,7 @@ p {
 .header-nav-list,
 .header-contact  {
     display: flex;
+    align-items: center;
     gap: 50px;}
 
 .header-link,
@@ -118,7 +119,7 @@ p {
     line-height: calc(16/14);
     letter-spacing: 0.02em;
 }
-.top {fill: red;}
+
 .header-link-current {color: var(--accent-txt-cl);}
 .header-link:hover, .header-link:focus {color: 
         var(--accent-txt-cl);
@@ -129,11 +130,27 @@ p {
         font-size: 14px;
         line-height: calc(16/14);
         letter-spacing: 0.02em;
+        align-items: center;
+        gap: 10px;
+        padding-top: 32px;
+        padding-bottom: 32px;
 }
 .header-mail:hover,
 .header-mail:focus,
 .header-phone:hover,
 .header-phone:focus {color: var(--accent-txt-cl);}
+.icon-nav {
+    fill: currentColor;
+    margin-right: 10px;
+    text-align: center;
+}
+.header-contact-list {
+    display: block;
+    align-items: center;
+    text-align: center;
+}
+
+
 /*main styles*/ 
 .section {
     padding-top: 94px;
@@ -222,6 +239,28 @@ font-weight: 900;
     display: flex;
     gap: var(--main-gap);
     }
+.specialty-list-item{flex-basis: 270px;}
+.specialty-icon-box {
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            width: 270px;
+            height: 120px;
+            background: #F5F4FA;
+            border-radius: 4px;
+            margin-bottom: 30px;
+        
+}
+.specialty-icon {
+            display: block;
+            align-items: center;
+            justify-content: center;
+            background-color: #F5F4FA;
+            border-radius: 4px;
+            outline: 2px solid red;
+            outline-offset: -2px;
+            
+        }
 .speciality-item {
     color: var(--main-txt-cl);
     font-weight: 700;
@@ -378,8 +417,8 @@ padding: 60px 0;
     letter-spacing: 0.02em;
 
     width: 1200px;
-        padding-left: 15px;
-        padding-right: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
     margin-bottom: 9px;
     
 }
@@ -390,6 +429,7 @@ padding: 60px 0;
 .footer-phone:focus {
     color: var(--accent-txt-cl);
 }
+
 .footer-address {
     color: var(--hero-txt-cl);
     font-style: normal;
@@ -431,7 +471,7 @@ padding: 60px 0;
 .footer-socials-titel{
     font-weight: 700;
         font-size: 14px;
-        line-height: calk(16/14);
+        line-height: calc(16/14);
         letter-spacing: 0.03em;
         text-transform: uppercase;
 
