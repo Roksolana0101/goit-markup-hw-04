@@ -11,11 +11,16 @@
     --main-bg-cl: #E5E5E5;
     --dark-bg-cl: #2F303A;
     --other-bg-cl: #F5F4FA;
+    --icon-cl: #AFB1B8;
       /*others*/
       --main-gap: 30px;
       --work-cards: 3;
       --teams-item: 4;
       --portfolio-item: 3;
+      --outline: ;
+      --outline-offset: ;
+      /*      --outline: 2px solid red;
+      --outline-offset: -2px;*/
 }
 body {
     font-family: var(--main-font);
@@ -53,8 +58,8 @@ p {
     margin-right: auto;
     
 
-    outline: 2px solid red;
-    outline-offset: -2px;
+    outline: var(--outline) ;
+    outline-offset: var(--outline-offset) ;
 }
 
 /* main buttn styles*/
@@ -257,8 +262,8 @@ font-weight: 900;
             justify-content: center;
             background-color: #F5F4FA;
             border-radius: 4px;
-            outline: 2px solid red;
-            outline-offset: -2px;
+            outline: var(--outline);
+                outline-offset: var(--outline-offset);
             
         }
 .speciality-item {
@@ -452,11 +457,11 @@ padding: 60px 0;
     justify-content: center;
     width: 44px;
     height:44px;
-    background-color: #FFFFFF;
+    background-color:var(--secondary-font);
     border-radius: 50%;
-    outline: 2px solid  red;
-    outline-offset: -2px;
-    color: #AFB1B8;
+    outline: var(--outline);
+        outline-offset: var(--outline-offset);
+    color:var(--icon-cl);
 
 }
 .socials-link:hover,
@@ -465,6 +470,39 @@ padding: 60px 0;
     background-color: var(--accent-txt-cl);
 }
 .socials-icon {
+    fill: currentColor;
+}
+/* cleints */
+
+.client-titel {
+    margin-bottom: 50px;
+}
+.client {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.client-link {
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 170px;
+    height: 92px;
+    border: 1px solid rgba(175, 177, 184, 1);
+    border-radius: 4px;
+    background-color: var(--secondary-font);
+    color: var(--icon-cl);
+
+}
+.client-link:hover,
+.client-link:focus {
+    color: var(--accent-txt-cl);
+    border: 1px solid var(--accent-txt-cl);
+}
+.client-icon {
     fill: currentColor;
 }
 /* footer socials icon*/
@@ -496,8 +534,8 @@ padding: 60px 0;
     height: 44px;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
-    outline: 2px solid red;
-    outline-offset: -2px;
+outline: var(--outline);
+    outline-offset: var(--outline-offset);
     color: var(--hero-txt-cl);
 
 }
