@@ -414,6 +414,7 @@ margin-bottom: 16px;
     background-color:var(--secondary-font);
     border-radius: 50%;
     outline: var(--outline);
+    color: var(--icon-cl);
 
 
 }
@@ -444,7 +445,7 @@ margin-bottom: 16px;
     height: 92px;
     border: 1px solid rgba(175, 177, 184, 1);
     border-radius: 4px;
-    color: var(--icon-cl);
+    color:var(--icon-cl);
 
 }
 .client-link:hover,
